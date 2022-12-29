@@ -1,4 +1,4 @@
-# TEE PELI TÄHÄN
+# Code for the game
 import pygame
 from random import sample, randint, choice
 
