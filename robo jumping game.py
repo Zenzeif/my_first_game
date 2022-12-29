@@ -44,10 +44,7 @@ class Robo_hyppely:
             y = -randint(self.kolikko.get_height(), 1000)
             self.kolikko_lista.append([x, y])
 
-    # Tässä funktiossa on tarkoitus lisätä hirviöt listaan niin, että niiden välimatka olisi satunnainen. 
-    # Alla oleva koodi ajaa asian mutta nyt hirviöt loppuvat jossain vaiheessa kun ne ovat menneet ruudun ulkopuolle koska x koordinaattia ei aseteta uudelleen (katso rivistä 94 alken oleva koodi).
-    # Jos x koordinaatti asetettaisiin loopissa niin se aiheuttaa sen, että hirviot voivat tulla päällekkäin vaikka käyetetään randint funktiota. Tästä syystä pitäisi löytää jokin muu ratkaisu.
-    def hirviot(self):
+      def hirviot(self):
         hirviot_otanta = sample(range(self.leveys, 500000, 260),1000)
         self.hirvio_lista = []
         for i in range(1000):
